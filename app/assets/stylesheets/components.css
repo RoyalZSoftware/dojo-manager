@@ -1,0 +1,46 @@
+.card {
+    padding: var(--sm) ;
+}
+
+/* Button */
+button {
+    padding: var(--sm);
+    padding-right: var(--lg);
+    padding-left: var(--lg);
+    color: var(--primary);
+    font-weight: bold;
+    border: none;
+    border-radius: 0px;
+    background-color: var(--elevated-two);
+    cursor: pointer;
+    transition: 0.1s background;
+}
+
+button:hover {
+    background-color: var(--elevated-three);
+    transition: 0.1s background;
+}
+
+/* Table */
+
+.table-container {
+    position: relative;
+    width: 100%;
+}
+
+table {
+    padding: var(--sm);
+}
+
+td {
+    padding: var(--sm);
+    border-bottom: 1px solid var(--primary);
+}
+
+.pagination {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: var(--sm);
+}

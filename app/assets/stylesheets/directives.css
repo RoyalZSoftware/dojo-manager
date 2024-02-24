@@ -1,0 +1,11 @@
+[highlight],[highlight="primary"] {
+    color: var(--primary) !important;
+}
+
+[highlight="error"] {
+    color: var(--error) !important;
+}
+
+[highlight="success"] {
+    color: var(--success) !important;
+}

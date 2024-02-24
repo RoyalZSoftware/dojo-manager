@@ -1,0 +1,14 @@
+:root {
+    /* Colors */
+    --primary: #d7b36f;
+    --background: #202932;
+    --elevated-one: #26313c;
+    --elevated-two: #364554;
+    --elevated-three: #45586c;
+    --success: green;
+    --error: red;
+    /* Padding */
+    --sm: 8px;
+    --md: 16px;
+    --lg: 24px;
+}

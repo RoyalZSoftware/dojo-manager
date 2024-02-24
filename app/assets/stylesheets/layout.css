@@ -1,0 +1,12 @@
+
+.grid {
+    display: grid;
+}
+
+.side-by-side {
+    grid-template-columns: 1fr 1fr;
+}
+
+.full-width {
+    width: 100%;
+}

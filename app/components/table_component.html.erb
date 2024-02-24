@@ -1,0 +1,45 @@
+<div class="table-container">
+    <table class="full-width">
+        <thead>
+            <% @headers.each do |header| %>
+                <th>
+                <% if @header_translations[header] %>
+                    <%= @header_translations[header] %>
+                <% else %>
+                    <%= header.capitalize %>
+                <% end %>
+                </th>
+            <% end %>
+        </thead>
+        <tbody>
+            <% @data.each do |row| %>
+                <tr>
+                <% @headers.each do |header| %>
+                    <% if @column_links[header] %>
+                        <td><a href="<%= @column_links[header].call(row) %>"><%= raw(row.send(header.to_sym)) %></a></td>
+                    <% else %>
+                        <td><%= raw(row.send(header.to_sym)) %></td>
+                    <% end %>
+                <% end %>
+                </tr>
+            <% end %>
+        </tbody>
+    </table>
+    <div class="pagination">
+
+    <% if can_go_back? %>
+        <a href="<%= build_page_link(@page - 1)%>">
+            <span class="material-icons">chevron_left</span>
+        </a>
+    <% end %>
+
+    <span>Seite <%= (@page + 1).to_s %></span>
+
+    <% if has_next_page? %>
+        <a href="<%= build_page_link(@page + 1)%>">
+            <span class="material-icons">chevron_right</span>
+        </a>
+    <% end %>
+
+    </div>
+</div>
