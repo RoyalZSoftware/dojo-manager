@@ -24,10 +24,19 @@ body {
     background-color: var(--background);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: var(--sm);
+}
+
 nav {
     padding: var(--lg);
 }
 
 main {
     padding: var(--lg);
+}
+
+input {
+    padding: var(--sm);
+    color: var(--background);
 }

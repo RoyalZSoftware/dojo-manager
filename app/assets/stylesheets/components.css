@@ -1,5 +1,6 @@
 .card {
-    padding: var(--sm) ;
+    padding: var(--lg);
+    background-color: var(--elevated-one);
 }
 
 /* Button */
@@ -30,6 +31,10 @@ button:hover {
 
 table {
     padding: var(--sm);
+}
+
+th {
+    text-align: left;
 }
 
 td {

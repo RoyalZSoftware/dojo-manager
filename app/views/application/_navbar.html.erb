@@ -1,3 +1,5 @@
 <nav class="navbar">
+    <% if user_signed_in? %>
     Hallo <span highlight><%= current_user.full_name %></span>
+    <% end %>
 </nav>
